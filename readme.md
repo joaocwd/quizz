@@ -1,7 +1,7 @@
 # Kanban - IMERSÃO 2
 
 - No backend usarei NestJS para criar uma API com CRUD.
-- No frontend usarei como base [este template](https://www.frontendmentor.io/challenges/kanban-task-management-web-app-wgQLt-HlbB) para servir a aplicação. Estarei usando Angular para a construção da aplicação.
+- No frontend usarei Angular para criar a interface.
 
 ## Instalação do Backend
 ```
