@@ -1,0 +1,19 @@
+<div class="w-full h-screen flex flex-col md:flex-row">
+  <div style="min-width: 64px; min-height: 100px;" class="md:w-16 w-full h-16 md:h-full bg-red-800 flex md:flex-col items-center justify-between text-white">
+    <div class="md:ml-0 ml-4 md:mt-4">
+      <button *ngIf="admin" routerLinkActive="bg-gray-200 text-black hover:bg-gray-200" class="p-4 pb-2 hover:bg-red-700 rounded-xl"><mat-icon>lock_open</mat-icon></button>
+      <button *ngIf="!admin" class="p-4 pb-2"><mat-icon></mat-icon></button>
+    </div>
+    <div class="md:w-full md:flex md:flex-col md:items-center">
+      <button routerLink="/home" routerLinkActive="bg-gray-200 text-black hover:bg-gray-200" class="p-4 pb-2 mx-2 md:mx-0 md:my-2 hover:bg-red-700 rounded-xl"><mat-icon>home</mat-icon></button>
+      <button routerLink="/results" routerLinkActive="bg-gray-200 text-black hover:bg-gray-200" class="p-4 pb-2 mx-2 md:mx-0 md:my-2 hover:bg-red-700 rounded-xl"><mat-icon>book</mat-icon></button>
+      <button routerLink="/settings" routerLinkActive="bg-gray-200 text-black hover:bg-gray-200" class="p-4 pb-2 mx-2 md:mx-0 md:my-2 hover:bg-red-700 rounded-xl"><mat-icon>settings</mat-icon></button>
+    </div>
+    <div class="md:mr-0 mr-4 md:mb-4">
+      <button routerLink="/login" routerLinkActive="bg-gray-200 text-black hover:bg-gray-200" class="p-4 pb-2 hover:bg-red-700 rounded-xl"><mat-icon>person_pin_circle</mat-icon></button>
+    </div>
+  </div>
+  <div class="overflow-y-auto">
+    <router-outlet class="w=full"></router-outlet>
+  </div>
+</div>

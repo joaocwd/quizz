@@ -1,0 +1,13 @@
+<div style="min-width: calc(100vw - 64px);" class="w-full h-full p-4 flex flex-col items-center overflow-y-auto">
+    <h2 class="text-center text-2xl my-6"><b>João</b>, seus resultados!</h2>
+    <h2 class="text-center text-lg mb-6">Veja aqui o histórico de quizzes respondido por você:</h2>
+    <div class="w-full flex justify-center flex-wrap mt-4">
+        <button *ngFor="let q of quiz"
+            class="w-96 h-64 mb-8 mx-4 rounded-xl shadow-xl bg-gray-200 flex flex-col items-center justify-between">
+            <div class="img rounded-t-xl" style="background-image: url('{{q.img}}');"></div>
+            <h3 class="text-xl font-semibold">{{q.name}}</h3>
+            <h3 class="text-sm mb-2">Sua nota média: {{q.nota}}</h3>
+            <h3 class="text-sm mb-2">Você realizou o quizz {{q.tries}} vezes</h3>
+        </button>
+    </div>
+</div>
